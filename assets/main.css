@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    padding: 20px;
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    height: 220px;
+}
+
+.card-intro {
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+.main-content {
+    flex: 70%;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* .main-content div {
+    margin: auto;
+} */
+
+.article-card{
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex: 100%;
+    text-align: center;
+}
+
+div .case-content {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.case-card {
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.profile {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    flex: 30%;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.recovered {
+    color: green;
+    font-weight: bold;
+}
+
+.death {
+    color: rgb(207, 8, 8);
+    font-weight: bold;
+}
+
+.positive {
+    color: orange;
+    font-weight: bold;
+}
+
+blockquote {
+    text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .case-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .case-card {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
